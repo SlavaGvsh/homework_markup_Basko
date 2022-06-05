@@ -1,0 +1,163 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ 
+ *, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ :focus, :active {
+   outline: none;
+ }
+ 
+ a:focus, a:active {
+   outline: none;
+ }
+ 
+ nav, footer, header, aside {
+   display: block;
+ }
+ 
+ html, body {
+   height: 100%;
+ }
+ 
+ body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  font-size: 25px;
+  line-height: 1.4;
+  color: #fff;
+  // min-width: 320px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+ }
+ 
+ input, button, textarea {
+   font-family: inherit;
+ }
+ 
+ input::-ms-clear {
+   display: none;
+ }
+ 
+ button {
+   cursor: pointer;
+ }
+ 
+ button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+ }
+ 
+ a, a:visited {
+   text-decoration: none;
+   color: #fff;
+ }
+ 
+ a:hover {
+   text-decoration: none;
+ }
+ 
+ ul li {
+   list-style: none;
+ }
+ 
+ img {
+   vertical-align: top;
+   max-width: 100%;
+   height: auto;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-size: inherit;
+   font-weight: 400;
+ }
+
+//  font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+[class*="__container"]{
+   max-width: 1316px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+:root{
+  --bg-color1: #F2F2F2; 
+  --bg-color2: #000;
+}
+
+#wrapper{
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.barcha{
+  background-color: var(--bg-color2);
+}
+.header{
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 61px 91px 33px 102px;
+  }
+  &__phone a{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+.barcha{
+  &__container{
+    display: flex;
+  } 
+  &__main{
+    padding: 210px 26px 0 36px;
+    h1{
+      max-width: 678px;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+      span{
+        font-weight: bold;
+      }
+    }
+    p{
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 1.5;
+      max-width: 521px;
+      margin-left: 206px;
+      position: relative;
+      &:before{
+        content: "";
+        top: -51px;
+        left: -71px;
+        position: absolute;
+        width: 55px;
+        height: 105px;
+        background: url(../img/barcha/arrows-main.png) 0 0 no-repeat;
+      }
+    }
+
+  }
+}
+
+
+
+.barcha {
+}
+.bracha__img {
+}
+
+
+#main{
+  flex: 1 1 auto;
+}
