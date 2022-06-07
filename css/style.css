@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 19px;
   line-height: 1.5;
   max-width: 521px;
-  margin-left: 206px;
+  margin: 0 0 86px 206px;
   position: relative;
 }
 
@@ -161,6 +161,69 @@ h1, h2, h3, h4, h5, h6 {
   width: 55px;
   height: 105px;
   background: url(../img/barcha/arrows-main.png) 0 0 no-repeat;
+}
+
+.barcha__main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 44px;
+}
+
+.barcha__main__info .barcha__info__btn {
+  overflow: hidden;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 15px 18px;
+  border-radius: 5px;
+  background-color: #FBD289;
+  color: #000;
+  position: relative;
+}
+
+.barcha__main__info .barcha__info__btn:before, .barcha__main__info .barcha__info__btn:after {
+  content: "";
+  top: -18px;
+  left: -22px;
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.barcha__main__info .barcha__info__btn:after {
+  top: -26px;
+  left: 160px;
+  width: 57px;
+  height: 57px;
+}
+
+.barcha__main__info .barcha__info__btn span {
+  position: relative;
+  z-index: 2;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.barcha__main__info .barcha__info__btn span::before {
+  content: "";
+  top: 11px;
+  left: 50px;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  z-index: -1;
 }
 
 #main {
