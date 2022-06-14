@@ -89,23 +89,108 @@
 :root{
   --bg-color1: #F2F2F2; 
   --bg-color2: #000;
+  --bg-color3: linear-gradient(21.5deg, rgba(17, 23, 42, 0.95) 8.56%, #11172A 91.44%, #2F3A5E 91.44%);
+ 
 }
-
+.btn{
+  overflow: hidden;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 13px 28px 12px 20px;
+  border-radius: 12px;
+  background-color: #B181FD;
+  color: #fff;
+  position: relative;
+  
+  &:before,
+  &:after{
+    content: "";
+    top: -18px;
+    left: -22px;
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+  &:after{
+    top: -26px;
+    left: 160px;
+    width: 57px;
+    height: 57px;
+    
+  }
+  span{
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 600;
+    &::before{
+      content: "";
+      top: 11px;
+      left: 50px;
+      position: absolute;
+      width: 68px;
+      height: 68px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+}
 #wrapper{
    display: flex;
    flex-direction: column;
    min-height: 100%;
 }
+#main{
+  flex: 1 1 auto;
+}
+.bg1{
+  background: var(--bg-color3);
+
+}
 
 .barcha{
-  background-color: var(--bg-color2);
+  padding-bottom: 263px;
+  position: relative;
+  margin-bottom: 126px;
+  &__bg-decor{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 360px;
+    height: 360px;
+    &::before{
+      content: "";
+      bottom: -126px;
+      left: -77px;
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: linear-gradient(202deg, #242F4C -52.53%, #13182D 152.53%);
+    }
+
+  }
+  
 }
 .header{
-  &__container{
+  &__content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 61px 91px 33px 102px;
+    // position: fixed;
+    // width: 100%;
+    // left: 0;
+    // top: 0;
+    // z-index: 10;
+    // background-color: var(--bg-color3);
   }
   &__phone a{
     font-weight: 600;
@@ -114,8 +199,9 @@
   }
 }
 .barcha{
-  &__container{
+  &__content{
     display: flex;
+    position: relative;
   } 
   &__main{
     padding: 210px 26px 0 36px;
@@ -200,22 +286,181 @@
           }
         }
       }
+      .barcha__info__link{
+        font-size: 17px;
+        line-height: 1.5;
+
+      }
         
 
     }
 
   }
+  .bracha__animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 583px;
+    &__img{
+      margin-top: 150px;
+      position: relative;
+      &::before{
+        content: "";
+        bottom: -155px;
+        left: 0px;
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        background: #1A213C url(../img/btn/img-cloud.png) 0 0 no-repeat;
+      }
+      &::after{
+        content: "";
+        top: -43px;
+        left: 173px;
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        background: #1A213C url(../img/btn/img-cloud.png) 0 0 no-repeat;
 
+      }
+    }
+    &__block-btn{
+    position: absolute;
+    bottom: -351px;
+    right: 18px;
+    &::before{
+      content: "";
+      top: 62px;
+      left: -87px;
+      width: 92px;
+      height: 92px;
+      box-shadow: -5.7px -8.2px 32px rgba(0, 7, 5, 0.31);
+      border-radius: 50%;
+      position: absolute;
+      background: #1A213C url(../img/btn/img-diamond.png) 0 0 no-repeat;
+
+    }
+      .block-btn1,.block-btn2,.block-btn3{
+        width: 228px;
+        height: 85px;
+        background: #1A243E;
+        box-shadow: -10.9px -15.6px 68px rgba(0, 7, 5, 0.7);
+        border-radius: 12px;
+        text-align: end;
+        padding: 26px 5px 0 0;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #fff;
+        position: relative;
+        margin: 0 auto 73px;
+        &::before{
+          content: "";
+          top: 0;
+          left: 0;
+          width: 47px;
+          border-radius: 12px 0 0 12px;
+          height: 85px;
+          position: absolute;
+          background: #FF6C8F url(../img/barcha/btn1-stars.png) 50% 50% no-repeat;
+        }
+        
+      }
+      .block-btn2{
+        text-align: center;
+        margin: 0 0 0 212px;
+        &::before{
+          background: #FBD289 url(../img/barcha/btn2-hand.png) 50% 50% no-repeat;
+
+        }
+        
+      }
+      .block-btn1{
+        &::after{
+          content: "";
+          top: 60px;
+          left: -50px;
+          width: 314px;
+          height: 200px;
+          position: absolute;
+          background: url(../img/btn/Group-arrous.png) 0 0 no-repeat;
+        }
+      }
+      .block-btn3{
+        width: 207px;
+        height: 53px;
+        padding: 11px 5px 0 0;
+        margin: 0 0 0 -25px;
+        &::before{
+          width: 43px;
+          height: 53px;
+          position: absolute;
+          background: #A66DFF url(../img/barcha/btn3-cash.png) 50% 50% no-repeat;
+        }
+      }
+    }
+  }
+}
+//-------------------------------------------section info
+.info__blog {
+}
+.block-news {
+  width: 702px;
+  margin: 0 auto;
+  position: relative;
+  &::before{
+    content: "";
+    top: 40px;
+    left: -215px;
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    background: url(../img/info/img-plus.png) 0 0 no-repeat;
+  }
+  &::after{
+    content: "";
+    top: 141px;
+    right: -215px;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    background: url(../img/info/img-ellipse.png) 0 0 no-repeat;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #191919;
+    margin-bottom: 30px;
+
+  }
+  &__text{
+    margin-bottom: 51px;
+    p{
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 1.5;
+      letter-spacing: 1.2px;
+      color: #191919;
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.text-center{
+  text-align: center;
+}
+.block-news__title {
+}
+.block-news__text {
+}
+.block-news__btn {
+}
+.btn {
 }
 
 
 
-.barcha {
-}
-.bracha__img {
-}
 
 
-#main{
-  flex: 1 1 auto;
-}
