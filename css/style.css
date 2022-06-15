@@ -435,6 +435,30 @@ h1, h2, h3, h4, h5, h6 {
   background: #A66DFF url(../img/barcha/btn3-cash.png) 50% 50% no-repeat;
 }
 
+.info__blog {
+  position: relative;
+}
+
+.info__blog::before {
+  content: "";
+  top: 40px;
+  left: 0;
+  width: 81px;
+  height: 81px;
+  position: absolute;
+  background: url(../img/info/img-plus.png) 0 0 no-repeat;
+}
+
+.info__blog::after {
+  content: "";
+  top: 141px;
+  right: -215px;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  background: url(../img/info/img-ellipse.png) 0 0 no-repeat;
+}
+
 .block-news {
   width: 702px;
   margin: 0 auto;
@@ -443,22 +467,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .block-news::before {
   content: "";
-  top: 40px;
-  left: -215px;
+  bottom: 90px;
+  left: -135px;
   width: 81px;
   height: 81px;
   position: absolute;
-  background: url(../img/info/img-plus.png) 0 0 no-repeat;
+  background: url(../img/info/img-star.png) 0 0 no-repeat;
 }
 
 .block-news::after {
   content: "";
-  top: 141px;
-  right: -215px;
+  bottom: 150px;
+  right: -124px;
   width: 58px;
   height: 58px;
   position: absolute;
-  background: url(../img/info/img-ellipse.png) 0 0 no-repeat;
+  background: url(../img/info/img-dl.png) 0 0 no-repeat;
 }
 
 .block-news__title {

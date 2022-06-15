@@ -403,15 +403,11 @@
 }
 //-------------------------------------------section info
 .info__blog {
-}
-.block-news {
-  width: 702px;
-  margin: 0 auto;
   position: relative;
   &::before{
     content: "";
     top: 40px;
-    left: -215px;
+    left: 0;
     width: 81px;
     height: 81px;
     position: absolute;
@@ -425,6 +421,29 @@
     height: 58px;
     position: absolute;
     background: url(../img/info/img-ellipse.png) 0 0 no-repeat;
+  }
+}
+.block-news {
+  width: 702px;
+  margin: 0 auto;
+  position: relative;
+  &::before{
+    content: "";
+    bottom: 90px;
+    left: -135px;
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    background: url(../img/info/img-star.png) 0 0 no-repeat;
+  }
+  &::after{
+    content: "";
+    bottom: 150px;
+    right: -124px;
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    background: url(../img/info/img-dl.png) 0 0 no-repeat;
   }
   &__title{
     font-weight: 700;
